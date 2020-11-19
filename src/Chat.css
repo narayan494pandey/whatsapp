@@ -1,22 +1,49 @@
-.chatBox {
+.chat {
   display: flex;
   flex-direction: column;
   flex: 0.65;
 }
 .chat__Header {
+  padding: 20px;
   display: flex;
   align-items: center;
-  padding: 20px;
   border-bottom: 1px solid lightgray;
 }
-.Chat__HeaderInfo {
+.chat__HeaderInfo {
   flex: 1;
   padding-left: 20px;
 }
-.Chat__HeaderInfo > h3 {
+.chat__HeaderInfo > h3 {
   margin-bottom: 3px;
   font-weight: 500;
 }
-.Chat__HeaderInfo > p {
+.chat__HeaderInfo > p {
   color: gray;
+}
+.chat__body {
+  flex: 1;
+  background-image: url("./images/whatsa.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow: scroll;
+}
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+.chat__timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+.chat__name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: x-small;
 }
