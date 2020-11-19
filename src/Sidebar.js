@@ -10,7 +10,9 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebar__header">
-            <Avatar src="/images/Narayan.jpg" />
+        
+             <Avatar src="/images/Narayan.jpg" />  
+            
             <div className="sidebar__headerRight">
                 <IconButton>
                  <DonutLargeIcon />
@@ -29,7 +31,7 @@ function Sidebar() {
             </div>
             <div className="sidebar__search">
                 <div className="sidebar__searchContainer">
-                    <SearchOutlined />
+                    <IconButton><SearchOutlined /></IconButton>
                     <input placeholder="search or start new chat" type="text" />
                 </div>
             

@@ -19,6 +19,10 @@
 .sidebar__header > .MuiAvatar-root {
   width: 60px !important;
   height: 60px !important;
+  cursor: pointer;
+}
+.sidebar__header > .MuiAvatar-root:hover {
+  background-color: white;
 }
 .sidebar__headerRight > .MuiSvgIcon-root {
   margin-right: 2vw;
@@ -55,4 +59,8 @@
   flex: 1;
   background-color: white;
   overflow: scroll;
+}
+.sidebar__chats > h2 {
+  text-align: center;
+  padding: 10px;
 }
