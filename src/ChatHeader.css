@@ -1,0 +1,12 @@
+.chatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ChatHeader__info {
+  margin-left: 15px;
+}
+.ChatHeader__info > h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
