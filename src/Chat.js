@@ -1,10 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Chat.css'
 import { Avatar, IconButton } from '@material-ui/core'
-import { AttachFile, MoreVert, SearchOutlined } from '@material-ui/icons'
+import { AttachFile, InsertEmoticon, MoreVert, SearchOutlined } from '@material-ui/icons'
 
 
 function Chat() {
+    const [input, setInput] = useState('');
+
     return (
         <div className="chat">
             <div className="chat__Header">
@@ -60,7 +62,23 @@ function Chat() {
                 
                 </p>
             </div>
-        </div>
+            <div className="chat__footer"></div>
+                <InsertEmoticon /> 
+                <form>
+                    <input 
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                        placeholder="Type a message"
+                        type="text"
+                    />
+                    <button 
+                        type="submit">
+                        Send a message
+                        </button>
+                
+                
+                </form>
+            </div>
     )
 }
 
